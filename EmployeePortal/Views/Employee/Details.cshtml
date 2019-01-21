@@ -1,0 +1,82 @@
+﻿@model EmployeePortal.Models.Employee
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Employee</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.First_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.First_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Last_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Last_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mid_Initial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mid_Initial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Phone_Home)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Phone_Home)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Phone_Cell)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Phone_Cell)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Extension)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Extension)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IRD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IRD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Active)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Active)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
